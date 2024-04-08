@@ -1,0 +1,9 @@
+input.hide-up-down[type=number]::-webkit-inner-spin-button,
+input.hide-up-down[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input.hide-up-down[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
