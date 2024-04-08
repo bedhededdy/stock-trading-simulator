@@ -11,12 +11,16 @@ import Navbar from "@components/Navbar";
 
 
 const App: React.FC = () => {
-  const [user, setUser] = useState<UserView>(new UserView());
+  const [user, setUser] = useState<UserView | null>(null);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     // TODO: CHECK FOR AN EXISTING SESSION ON THE SERVER
+    //       IF THERE IS ONE, GET THE USER DATA AND SET IT
+    //       THEN NAVIGATE TO THE DASHBOARD, BUT CAN'T DO IT
+    //       USING USE NAVIGATE BECAUSE YOU CAN'T USE IT
+    //       OUTSIDE A ROUTER CONTEXT
   }, []);
 
   return (
